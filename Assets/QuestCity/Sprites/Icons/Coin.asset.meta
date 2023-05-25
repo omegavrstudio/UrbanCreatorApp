@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 9e1a031352250fc43a83deead5dd0499
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+    <path
+    d="M12.005 22.003C6.48201 22.003 2.005 17.526 2.005 12.003C2.005 6.47999 6.48201
+    2.00299 12.005 2.00299C17.528 2.00299 22.005 6.47999 22.005 12.003C22.005 17.526
+    17.528 22.003 12.005 22.003ZM12.005 7.75999L7.762 12.003L12.005 16.246L16.247
+    12.003L12.005 7.75999Z" fill="white"/>
+
+    </svg>
+
+'
+  assetBundleName: 
+  assetBundleVariant: 

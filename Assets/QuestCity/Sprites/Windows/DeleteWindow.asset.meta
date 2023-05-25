@@ -1,0 +1,79 @@
+fileFormatVersion: 2
+guid: 7ee9ad639ff0b8845af1afc7ff4430d7
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: '<svg width="326" height="151" viewBox="0 0 326 151" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+    <g
+    filter="url(#filter0_d_26_2585)">
+
+    <g clip-path="url(#clip0_26_2585)">
+
+    <rect
+    x="9" y="3" width="314" height="139" rx="20" fill="white"/>
+
+    <rect width="314"
+    height="62" transform="translate(9 3)" fill="url(#paint0_linear_26_2585)"/>
+
+    </g>
+
+    </g>
+
+    <defs>
+
+    <filter
+    id="filter0_d_26_2585" x="0" y="0" width="326" height="151" filterUnits="userSpaceOnUse"
+    color-interpolation-filters="sRGB">
+
+    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+
+    <feColorMatrix
+    in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127
+    0" result="hardAlpha"/>
+
+    <feOffset dx="-3" dy="3"/>
+
+    <feGaussianBlur
+    stdDeviation="3"/>
+
+    <feComposite in2="hardAlpha" operator="out"/>
+
+    <feColorMatrix
+    type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0"/>
+
+    <feBlend
+    mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_26_2585"/>
+
+    <feBlend
+    mode="normal" in="SourceGraphic" in2="effect1_dropShadow_26_2585" result="shape"/>
+
+    </filter>
+
+    <linearGradient
+    id="paint0_linear_26_2585" x1="309.242" y1="-1.53087" x2="296.97" y2="98.585"
+    gradientUnits="userSpaceOnUse">
+
+    <stop stop-color="#FFC700"/>
+
+    <stop
+    offset="0.535301" stop-color="#EE46D3"/>
+
+    <stop offset="1" stop-color="#907CFF"/>
+
+    </linearGradient>
+
+    <clipPath
+    id="clip0_26_2585">
+
+    <rect x="9" y="3" width="314" height="139" rx="20" fill="white"/>
+
+    </clipPath>
+
+    </defs>
+
+    </svg>
+
+'
+  assetBundleName: 
+  assetBundleVariant: 
