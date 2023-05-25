@@ -19,7 +19,7 @@ namespace PathCreation.Examples
             }
         }
 
-        void Update()
+        void FixedUpdate()
         {
             if (pathCreator != null)
             {
