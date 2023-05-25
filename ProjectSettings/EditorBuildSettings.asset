@@ -7,7 +7,7 @@ EditorBuildSettings:
   m_Scenes:
   - enabled: 1
     path: Assets/QuestCity/Scenes/Main.unity
-    guid: 9fc0d4010bbf28b4594072e72b8655ab
+    guid: ba10469c065247948bc6a6af8e5f6dba
   m_configObjects:
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 9ecd16d3400e63548b152a13298148c5, type: 2}
     com.unity.input.settings: {fileID: 11400000, guid: baf42f648e2a7fe4e85050e0a4d869a1, type: 2}

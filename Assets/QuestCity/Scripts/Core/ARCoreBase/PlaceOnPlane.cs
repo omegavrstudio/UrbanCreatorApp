@@ -14,7 +14,7 @@ namespace QuestCity.Core.ARCoreBase
     {
         [SerializeField]
         private GameObject _placedObject;
-        private UnityEvent PlacementUpdate;
+        private UnityEvent _ObjectPlacement;
         [SerializeField]
         private GameObject _visualIndicator;
         private ARRaycastManager _raycastManager;
@@ -33,6 +33,11 @@ namespace QuestCity.Core.ARCoreBase
         {
             _raycastManager = GetComponent<ARRaycastManager>();
             InputManagerAR.Instance.OnStartTouch += Instance_OnStartTouch;
+        }
+
+        private void Start()
+        {
+            
         }
 
         private void Instance_OnStartTouch(Vector2 position, float time)
