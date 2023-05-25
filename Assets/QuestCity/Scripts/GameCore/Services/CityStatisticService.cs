@@ -14,7 +14,6 @@ namespace QuestCity.GameCore.Services
         protected override void Awake()
         {
             base.Awake();
-            cityStatistic = FindAnyObjectByType<CityStatisticProvider>();
         }
 
         protected override void Start()
@@ -27,34 +26,40 @@ namespace QuestCity.GameCore.Services
             return cityStatistic.CityStatistics;
         }
 
-        public virtual void AddCoin()
+        public override void Initialize()
         {
-            cityStatistic.AddCoin();
+            base.Initialize();
+            cityStatistic = FindAnyObjectByType<CityStatisticProvider>();
         }
 
-        public virtual void AddPeople()
+        public virtual void AddCoin(float coinCount)
         {
-            cityStatistic.AddPeople();
+            cityStatistic.AddCoin(coinCount);
         }
 
-        public virtual void AddBuildings()
+        public virtual void AddPeople(float pepole)
         {
-            cityStatistic.AddBuildings();
+            cityStatistic.AddPeople(pepole);
         }
 
-        public virtual void AddRegions()
+        public virtual void AddBuildings(float buildingCount)
         {
-            cityStatistic.AddRegions();
+            cityStatistic.AddBuildings(buildingCount);
         }
 
-        public virtual void AddHappy()
+        public virtual void AddRegions(float regionCount)
         {
-            cityStatistic.AddHappy();
+            cityStatistic.AddRegions(regionCount);
         }
 
-        public virtual void AddUniqueBuildings()
+        public virtual void AddHappy(float happyCount)
         {
-            cityStatistic.AddUniqueBuildings();
+            cityStatistic.AddHappy(happyCount);
+        }
+
+        public virtual void AddUniqueBuildings(float uniqueBuildingsCount)
+        {
+            cityStatistic.AddUniqueBuildings(uniqueBuildingsCount);
         }
     }
 }

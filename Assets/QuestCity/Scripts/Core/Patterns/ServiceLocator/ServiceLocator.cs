@@ -33,17 +33,18 @@ namespace QuestCity.Core.Patterns
             return (T)_services[key];
         }
 
-        public void Register<T>(T service) where T : IService
+        public T Register<T>(T service) where T : IService
         {
             string key = typeof(T).Name;
             if (_services.ContainsKey(key))
             {
                 Debug.LogError(
                     $"Attempted to register service of type {key} which is already registered with the {GetType().Name}.");
-                return;
+                return service;
             }
 
             _services.Add(key, service);
+            return service;
         }
 
         public void Unregister<T>() where T : IService

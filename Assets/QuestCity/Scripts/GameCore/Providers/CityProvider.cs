@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GameProvider : MonoBehaviour
+public class CityProvider : MonoBehaviour
 {
     private void Awake()
     {

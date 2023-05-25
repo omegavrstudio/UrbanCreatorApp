@@ -13,7 +13,7 @@ namespace QuestCity.GameCore
         {
             get
             { 
-                return statistic; 
+                return statistic;
             }
 
             private set
@@ -22,6 +22,7 @@ namespace QuestCity.GameCore
             }
         }
 
+        [SerializeField]
         private CityStatisticStruct statistic;
 
         private void Awake()
@@ -32,13 +33,13 @@ namespace QuestCity.GameCore
             }
             else
             {
-                statistic = new CityStatisticStruct();
+                statistic = new CityStatisticStruct(1, 10000, 10, 0, 0, 0, 0);
             }
         }
 
         private bool GetCacheStatistic(out CityStatisticStruct cityStatisticStruct)
         {
-            cityStatisticStruct = new CityStatisticStruct();
+            cityStatisticStruct = new CityStatisticStruct(1, 10000, 10, 0, 0, 0, 0);
             return true;
         }
 
@@ -47,33 +48,39 @@ namespace QuestCity.GameCore
             EventHolder<CityStatisticProvider>.RaiseRegistraionInfo(this);
         }
 
-        public virtual void AddCoin()
+        public virtual void AddCoin(float coinCount)
         {
+            statistic.CoinsCount += coinCount;
             UpdateStatistics();
         }
 
-        public virtual void AddPeople()
+        public virtual void AddPeople(float peopleCount)
         {
+            statistic.PeoplesCount += peopleCount;
             UpdateStatistics();
         }
 
-        public virtual void AddBuildings()
+        public virtual void AddBuildings(float buildingCount)
         {
+            statistic.BuildingsCount += buildingCount;
             UpdateStatistics();
         }
 
-        public virtual void AddRegions()
+        public virtual void AddRegions(float regionsCount)
         {
+            statistic.RegionsCount += regionsCount;
             UpdateStatistics();
         }
 
-        public virtual void AddHappy()
+        public virtual void AddHappy(float happyCount)
         {
+            statistic.HappyIndex += happyCount;
             UpdateStatistics();
         }
 
-        public virtual void AddUniqueBuildings()
+        public virtual void AddUniqueBuildings(float uniqueBuildingsCount)
         {
+            statistic.UniqueBuildings += uniqueBuildingsCount;
             UpdateStatistics();
         }
     }
