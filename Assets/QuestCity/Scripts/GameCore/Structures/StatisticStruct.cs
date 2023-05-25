@@ -1,20 +1,24 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 namespace QuestCity.GameCore.Structures
 {
+    [Serializable]
     public struct CityStatisticStruct
     {
-        public int CoinsCount;
-        public int PeoplesCount;
-        public int BuildingsCount;
-        public int RegionsCount;
-        public int HappyIndex;
-        public int UniqueBuildings;
+        public float CityLevel;
+        public float CoinsCount;
+        public float PeoplesCount;
+        public float BuildingsCount;
+        public float RegionsCount;
+        public float HappyIndex;
+        public float UniqueBuildings;
 
-        public CityStatisticStruct(int coinsCount = 0, int peoplesCount = 0, int buildingsCount = 0, int regionsCount = 0, int happyIndex = 0, int uniqueBuildings = 0)
+        public CityStatisticStruct(float citylevel = 1, float coinsCount = 10000, float peoplesCount = 10, float buildingsCount = 0, float regionsCount = 0, float happyIndex = 0, float uniqueBuildings = 0)
         {
+            this.CityLevel = citylevel;
             this.CoinsCount = coinsCount;
             this.PeoplesCount = peoplesCount;
             this.BuildingsCount = buildingsCount;

@@ -9,11 +9,11 @@ namespace QuestCity.GameCore.Services
     public interface ICityStatisticsService : IService
     {
         public virtual CityStatisticStruct GetStatistic() { return default; }
-        public virtual void AddCoin() { }
-        public virtual void AddPeople() { }
-        public virtual void AddBuildings() { }
-        public virtual void AddRegions() { }
-        public virtual void AddHappy() { }
-        public virtual void AddUniqueBuildings() { }
+        public virtual void AddCoin(float coinCount) { }
+        public virtual void AddPeople(float pepole) { }
+        public virtual void AddBuildings(float buildingCount) { }
+        public virtual void AddRegions(float regionCount) { }
+        public virtual void AddHappy(float happyCount) { }
+        public virtual void AddUniqueBuildings(float uniqueBuildingsCount) { }
     }
 }

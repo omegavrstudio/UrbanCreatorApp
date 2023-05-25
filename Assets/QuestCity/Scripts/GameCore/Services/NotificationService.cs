@@ -8,6 +8,9 @@ namespace QuestCity.GameCore.Services
 {
     public class NotificationService : ServiceBase, INotificationService
     {
-
+        public override void Initialize()
+        {
+            base.Initialize();
+        }
     }
 }
