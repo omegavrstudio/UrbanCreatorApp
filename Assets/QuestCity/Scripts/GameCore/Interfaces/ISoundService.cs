@@ -8,6 +8,7 @@ namespace QuestCity.GameCore.Interfaces
     public interface ISoundService : IService
     {
         void PlayAudio(int soundNumber);
-        void StopAllAudio();
+        void PlayAudio(string name);
+        
     }
 }
