@@ -32,13 +32,18 @@ namespace QuestCity.Core.ARCoreBase
         private void Awake()
         {
             _raycastManager = GetComponent<ARRaycastManager>();
+        }
+
+        private void OnEnable()
+        {
             InputManagerAR.Instance.OnStartTouch += Instance_OnStartTouch;
         }
 
-        private void Start()
+        private void OnDisable()
         {
-            
+            InputManagerAR.Instance.OnStartTouch -= Instance_OnStartTouch;
         }
+
 
         private void Instance_OnStartTouch(Vector2 position, float time)
         {
@@ -46,7 +51,15 @@ namespace QuestCity.Core.ARCoreBase
             {
                 var hitPose = _hitList[0].pose;
 
-                Instantiate(PlacedObject, hitPose.position, hitPose.rotation);
+                if (spawnedObject)
+                {
+                    spawnedObject.transform.position = hitPose.position;
+                    spawnedObject.transform.rotation = hitPose.rotation;
+                }
+                else
+                {
+                    spawnedObject = Instantiate(PlacedObject, hitPose.position, hitPose.rotation);
+                }
             }
         }
     }
