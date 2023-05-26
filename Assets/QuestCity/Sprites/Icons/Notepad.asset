@@ -43,7 +43,67 @@ MonoBehaviour:
 '
   _title: 
   _description: 
---- !u!43 &-454963317911960660
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35648741dd5b14baa82bec08abfe7457, type: 3}
+  m_Name: Notepad
+  m_EditorClassIdentifier: 
+  _lastTimeModified: 638207120116696960
+  _documentAsset: {fileID: -477778543286190136}
+  _sharedMesh: {fileID: 5812262913414605575}
+  _antialiasing: 1
+  _generateCollider: 0
+  _keepSVGFile: 1
+  _ignoreSVGCanvas: 1
+  _colliderShape: []
+  _format: 2
+  _useGradients: 0
+  _meshCompression: 0
+  _optimizeMesh: 1
+  _generateNormals: 0
+  _generateTangents: 0
+  _scale: 0.01
+  _vpm: 1000
+  _depthOffset: 0.01
+  _compressDepth: 1
+  _pivotPoint: {x: 0.5, y: 0.5}
+  _customPivotPoint: 0
+  _border: {x: 0, y: 0, z: 0, w: 0}
+  _sliceMesh: 0
+  _sharedGradients:
+  - colorKeys:
+    - time: 1
+      color:
+        serializedVersion: 2
+        rgba: 4294967295
+    - time: 0
+      color:
+        serializedVersion: 2
+        rgba: 4294967295
+    alphaKeys:
+    - time: 1
+      alpha: 1
+    - time: 0
+      alpha: 1
+    index: 0
+  _sharedShaders:
+  - SVG Importer/GradientColor/GradientColorAlphaBlendedAntialiased
+  _canvasRectangle:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0.17
+    height: 0.21
+  _useLayers: 0
+  _layers: []
+--- !u!43 &5812262913414605575
 Mesh:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -208,63 +268,3 @@ Mesh:
     offset: 0
     size: 0
     path: 
---- !u!114 &11400000
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 35648741dd5b14baa82bec08abfe7457, type: 3}
-  m_Name: Notepad
-  m_EditorClassIdentifier: 
-  _lastTimeModified: 638206398802110477
-  _documentAsset: {fileID: -477778543286190136}
-  _sharedMesh: {fileID: -454963317911960660}
-  _antialiasing: 1
-  _generateCollider: 0
-  _keepSVGFile: 1
-  _ignoreSVGCanvas: 1
-  _colliderShape: []
-  _format: 1
-  _useGradients: 0
-  _meshCompression: 0
-  _optimizeMesh: 1
-  _generateNormals: 0
-  _generateTangents: 0
-  _scale: 0.01
-  _vpm: 1000
-  _depthOffset: 0.01
-  _compressDepth: 1
-  _pivotPoint: {x: 0.5, y: 0.5}
-  _customPivotPoint: 0
-  _border: {x: 0, y: 0, z: 0, w: 0}
-  _sliceMesh: 0
-  _sharedGradients:
-  - colorKeys:
-    - time: 1
-      color:
-        serializedVersion: 2
-        rgba: 4294967295
-    - time: 0
-      color:
-        serializedVersion: 2
-        rgba: 4294967295
-    alphaKeys:
-    - time: 1
-      alpha: 1
-    - time: 0
-      alpha: 1
-    index: 0
-  _sharedShaders:
-  - SVG Importer/GradientColor/GradientColorAlphaBlendedAntialiased
-  _canvasRectangle:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 0.17
-    height: 0.21
-  _useLayers: 0
-  _layers: []
