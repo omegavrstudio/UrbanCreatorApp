@@ -18,7 +18,7 @@ namespace QuestCity.GameCore.Models
         Transport
     }
 
-    public enum RegionsType
+    public enum DisctritsType
     {
         Life,
         Commercial,
