@@ -41,15 +41,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35648741dd5b14baa82bec08abfe7457, type: 3}
   m_Name: X
   m_EditorClassIdentifier: 
-  _lastTimeModified: 638206398802030425
+  _lastTimeModified: 638207972860933012
   _documentAsset: {fileID: -6183494511496452648}
-  _sharedMesh: {fileID: 2468703238595661317}
+  _sharedMesh: {fileID: 6702296849432109206}
   _antialiasing: 1
   _generateCollider: 0
   _keepSVGFile: 1
   _ignoreSVGCanvas: 1
   _colliderShape: []
-  _format: 1
+  _format: 2
   _useGradients: 0
   _meshCompression: 0
   _optimizeMesh: 1
@@ -89,7 +89,7 @@ MonoBehaviour:
     height: 0.24
   _useLayers: 0
   _layers: []
---- !u!43 &2468703238595661317
+--- !u!43 &6702296849432109206
 Mesh:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
