@@ -21,11 +21,19 @@ namespace QuestCity.GameCore.Services
         {
             for (int i = 0; i < sounds.Count; i++)
             {
-                if (sounds[i].name == name) StartCoroutine(PlayAudioClip(sounds[i].clip));
+                if (sounds[i].name == name) {
+                    StartCoroutine(PlayAudioClip(sounds[i].clip));
+                    return;
+                }
             }
         }
 
-        IEnumerator PlayAudioClip(AudioClip clip) {
+		public void PlayAudio(AudioClip clip)
+		{
+			StartCoroutine(PlayAudioClip(clip));
+		}
+
+		IEnumerator PlayAudioClip(AudioClip clip) {
 
             AudioSource source = Pool.Get();
             source.PlayOneShot(clip);
@@ -93,7 +101,8 @@ namespace QuestCity.GameCore.Services
         {
             Destroy(source.gameObject);
         }
-    }
+
+	}
 
     [RequireComponent(typeof(AudioSource))]
     public class ItemPoolAudioSource : MonoBehaviour

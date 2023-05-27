@@ -9,6 +9,7 @@ namespace QuestCity.GameCore.Interfaces
     {
         void PlayAudio(int soundNumber);
         void PlayAudio(string name);
-        
-    }
+        void PlayAudio(AudioClip clip);
+
+	}
 }
