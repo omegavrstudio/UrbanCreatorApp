@@ -34,7 +34,7 @@ namespace QuestCity.GameCore.Services
         {
             float CurrentCiyLevel = ServiceLocator.Current.Get<ICityStatisticsService>().GetStatistic().CityLevel;
             float CurrentPeoplesCount = ServiceLocator.Current.Get<ICityStatisticsService>().GetStatistic().PeoplesCount;
-            Debug.Log(CurrentCiyLevel);
+            //Debug.Log(CurrentCiyLevel);
             float CoinIncreaseValue = CurrentCiyLevel * 10 + (CurrentPeoplesCount / CurrentCiyLevel * 5f);
 
             ServiceLocator.Current.Get<ICityStatisticsService>().AddCoin(CoinIncreaseValue);

@@ -15,5 +15,6 @@ namespace QuestCity.GameCore.Services
         public virtual void AddRegions(float regionCount) { }
         public virtual void AddHappy(float happyCount) { }
         public virtual void AddUniqueBuildings(float uniqueBuildingsCount) { }
+        public virtual void AddExperience(float experience) { }
     }
 }

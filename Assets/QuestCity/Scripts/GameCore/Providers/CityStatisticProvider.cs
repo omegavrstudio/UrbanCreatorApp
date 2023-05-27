@@ -1,5 +1,6 @@
 using QuestCity.Core.Patterns;
 using QuestCity.GameCore.Structures;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -33,13 +34,13 @@ namespace QuestCity.GameCore
             }
             else
             {
-                statistic = new CityStatisticStruct(1, 10000, 10, 0, 0, 0, 0);
+                statistic = new CityStatisticStruct(1, 0, 10000, 10, 0, 0, 0, 0);
             }
         }
 
         private bool GetCacheStatistic(out CityStatisticStruct cityStatisticStruct)
         {
-            cityStatisticStruct = new CityStatisticStruct(1, 10000, 10, 0, 0, 0, 0);
+            cityStatisticStruct = new CityStatisticStruct(1, 0, 10000, 10, 0, 0, 0, 0);
             return true;
         }
 
@@ -83,5 +84,11 @@ namespace QuestCity.GameCore
             statistic.UniqueBuildings += uniqueBuildingsCount;
             UpdateStatistics();
         }
-    }
+
+		internal void AddExperience(float experience)
+		{
+			statistic.CityExperience += experience;
+			UpdateStatistics();
+		}
+	}
 }

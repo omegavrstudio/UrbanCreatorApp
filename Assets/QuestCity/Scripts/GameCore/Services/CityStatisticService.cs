@@ -61,5 +61,10 @@ namespace QuestCity.GameCore.Services
         {
             cityStatistic.AddUniqueBuildings(uniqueBuildingsCount);
         }
-    }
+
+		public virtual void AddExperience(float experience)
+		{
+			cityStatistic.AddExperience(experience);
+		}
+	}
 }

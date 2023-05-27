@@ -7,19 +7,36 @@ public class ChallangeSettings : ScriptableObject
 {
     public string Title;
     public string Description;
+    public int LevelUnlock;
 
-    public bool Level;
+    public bool ListenLevel;
     public float CityLevelToAchive;
-    public bool Coins;
+
+    public bool ListenCoins;
     public float CoinsCountToAchive;
-    public bool Pepole;
+
+    public bool ListenPeople;
     public float PeoplesCountToAchive;
-    public bool Buildings;
-    public float BuildingsCountToAchiveToAchive;
-    public bool Regions;
+
+    public bool ListenBuildings;
+    public float BuildingsCountToAchive;
+
+    public bool ListenRegions;
     public float RegionsCount;
-    public bool Happy;
+
+    public bool ListenHappy;
     public float HappyIndexToAchive;
-    public bool UniqueBuildings;
+
+    public bool ListenUniqueBuildings;
     public float UniqueBuildingsToAchive;
+
+    [Header("Награды")]
+    public float CoinsAward;
+    public float HappyAward;
+    public float ExpAward;
+    public float PeoplesAward;
+    public float RegionsAward;
+    public float BuildingsCountAward;
+    public float UniqueBuildingsAward;
+
 }

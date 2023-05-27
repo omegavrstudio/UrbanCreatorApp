@@ -9,6 +9,7 @@ namespace QuestCity.GameCore.Structures
     public struct CityStatisticStruct
     {
         public float CityLevel;
+        public float CityExperience;
         public float CoinsCount;
         public float PeoplesCount;
         public float BuildingsCount;
@@ -16,9 +17,10 @@ namespace QuestCity.GameCore.Structures
         public float HappyIndex;
         public float UniqueBuildings;
 
-        public CityStatisticStruct(float citylevel = 1, float coinsCount = 10000, float peoplesCount = 10, float buildingsCount = 0, float regionsCount = 0, float happyIndex = 0, float uniqueBuildings = 0)
+        public CityStatisticStruct(float citylevel = 1, float cityExperience = 0, float coinsCount = 10000, float peoplesCount = 10, float buildingsCount = 0, float regionsCount = 0, float happyIndex = 0, float uniqueBuildings = 0)
         {
             this.CityLevel = citylevel;
+            this.CityExperience = cityExperience;
             this.CoinsCount = coinsCount;
             this.PeoplesCount = peoplesCount;
             this.BuildingsCount = buildingsCount;

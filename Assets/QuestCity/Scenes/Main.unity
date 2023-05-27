@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44830972, g: 0.4975084, b: 0.57178116, a: 1}
+  m_IndirectSpecularColor: {r: 0.45095897, g: 0.5008301, b: 0.57442266, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -5045,6 +5045,22 @@ PrefabInstance:
       propertyPath: sounds.Array.data[2].name
       value: Thund
       objectReference: {fileID: 0}
+    - target: {fileID: 7140864737302649288, guid: 6ee5790103eb21348996368a304367fe, type: 3}
+      propertyPath: allChallanges.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7140864737302649288, guid: 6ee5790103eb21348996368a304367fe, type: 3}
+      propertyPath: allChallanges.Array.data[0].properties
+      value: 
+      objectReference: {fileID: 11400000, guid: bec941dc175d121488cecaf46ffa8df2, type: 2}
+    - target: {fileID: 7140864737302649288, guid: 6ee5790103eb21348996368a304367fe, type: 3}
+      propertyPath: allChallanges.Array.data[1].properties
+      value: 
+      objectReference: {fileID: 11400000, guid: 09a8f1241d30f5e4082e29f91df3d9b5, type: 2}
+    - target: {fileID: 7140864737302649288, guid: 6ee5790103eb21348996368a304367fe, type: 3}
+      propertyPath: allChallanges.Array.data[2].properties
+      value: 
+      objectReference: {fileID: 11400000, guid: 8b245d356afef54438291633ef78ccc0, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
