@@ -11,7 +11,7 @@ namespace QuestCity.Core.Patterns
 
         private static T _currentInfoState;
 
-        private static void AddListeneer(Action<T> listener, bool instantNotify)
+        public static void AddListeneer(Action<T> listener, bool instantNotify)
         {
             _listeners.Add(listener);
             if (instantNotify && _currentInfoState != null)
