@@ -1458,7 +1458,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -6467590265779053206, guid: c256f2a7045fe3f46b67b2d837e16581, type: 3}
+  - {fileID: 2100000, guid: 355467cd24528af4c8a0a57c751b9d73, type: 2}
   - {fileID: 457437037745059597, guid: c256f2a7045fe3f46b67b2d837e16581, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -14156,6 +14156,10 @@ PrefabInstance:
       value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 9191750267278551097, guid: df89bd3778e32db4fa2c5f506c7bf028, type: 3}
+      propertyPath: speedObjects
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 9191750267278551097, guid: df89bd3778e32db4fa2c5f506c7bf028, type: 3}
       propertyPath: isStartObjectSpawn
       value: 1
       objectReference: {fileID: 0}
@@ -14256,6 +14260,10 @@ PrefabInstance:
     - target: {fileID: 7347685073389524527, guid: 1c02975fd6da23f41a666f3479621e0c, type: 3}
       propertyPath: m_Name
       value: '[HUMANS]'
+      objectReference: {fileID: 0}
+    - target: {fileID: 7953124973514396702, guid: 1c02975fd6da23f41a666f3479621e0c, type: 3}
+      propertyPath: speedObjects
+      value: 0.04
       objectReference: {fileID: 0}
     - target: {fileID: 7953124973514396702, guid: 1c02975fd6da23f41a666f3479621e0c, type: 3}
       propertyPath: OnStartPathGenerate.Array.size

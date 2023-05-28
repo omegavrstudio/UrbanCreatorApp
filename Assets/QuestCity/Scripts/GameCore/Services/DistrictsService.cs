@@ -6,6 +6,7 @@ using QuestCity.GameCore.Interfaces;
 using QuestCity.GameCore.Base;
 using QuestCity.UI;
 using QuestCity.Core.Patterns;
+using Lean.Gui;
 
 namespace QuestCity.GameCore.Services
 {
@@ -19,6 +20,7 @@ namespace QuestCity.GameCore.Services
 
 		[SerializeField] private BaseDistrict districtSelcted;
 
+		[SerializeField] private LeanWindow _shopWindow;
 		[SerializeField] private UIDistrict districtUI;
 		[SerializeField] private List<BaseDistrict> districts = new List<BaseDistrict>();
 		public override void Initialize()
@@ -105,19 +107,21 @@ namespace QuestCity.GameCore.Services
 			
 			service.SubCoin(districtSelcted.DistrictSettings.CostToCreate);
 			
-			districtSelcted.DisctrictExist = true;
+	
+			districtSelcted.CreateDistrict();
 			districtUI.LoadDataByDestrict(districtSelcted);
 			ÑolorizeDestrict(districtSelcted);
-
+			_shopWindow.TurnOff();
 		}
 
 		public void SellActiveDestrict()
 		{
 			ICityStatisticsService service = ServiceLocator.Current.Get<ICityStatisticsService>();
 			service.AddCoin(districtSelcted.DistrictSettings.CostToDestroy);
-			districtSelcted.DisctrictExist = false;
+			
+			districtSelcted.DestroyDistrict();
 			districtUI.LoadDataByDestrict(districtSelcted);
-			ÑolorizeDestrict(districtSelcted);
+			_shopWindow.TurnOff();
 
 		}
 	}

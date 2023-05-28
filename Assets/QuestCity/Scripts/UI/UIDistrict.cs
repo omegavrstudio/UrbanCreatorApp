@@ -18,6 +18,7 @@ namespace QuestCity.UI {
         [SerializeField] private TextMeshProUGUI _costBuy;
 
 
+        [SerializeField] private LeanWindow _shopWindow;
         [SerializeField] private LeanButton _buyButton;
         [SerializeField] private LeanButton _sellButton;
 

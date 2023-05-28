@@ -19,6 +19,7 @@ namespace QuestCity.Splines {
 
 		[Header("Спавн объектов следующих на путях")]
 		[SerializeField] private bool isStartObjectSpawn = false;
+		[SerializeField] private float speedObjects;
 		[SerializeField] private int countObjects = 2;
 
 		void Start()
@@ -89,7 +90,7 @@ namespace QuestCity.Splines {
 		IEnumerator SpawnRandomObjects(int countObjects)
 		{
 			for (int i = 0; i < countObjects; i++) {
-				SpawnRandomVehicleInPath(paths[0], 0.02f);
+				SpawnRandomVehicleInPath(paths[0], speedObjects);
 				yield return new WaitForSeconds(Random.Range(5.0f, 20.0f));
 			
 			}

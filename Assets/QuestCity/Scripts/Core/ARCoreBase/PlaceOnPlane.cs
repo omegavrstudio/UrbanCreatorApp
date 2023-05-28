@@ -19,6 +19,8 @@ namespace QuestCity.Core.ARCoreBase
         private GameObject _visualIndicator;
         private ARRaycastManager _raycastManager;
 
+        public UnityEvent OnPlaceMoscow = new UnityEvent();
+
         public GameObject PlacedObject
         {
             get { return _placedObject; }
@@ -58,7 +60,8 @@ namespace QuestCity.Core.ARCoreBase
                 }
                 else
                 {
-                    spawnedObject = Instantiate(PlacedObject, hitPose.position, hitPose.rotation);
+                    OnPlaceMoscow.Invoke();
+					spawnedObject = Instantiate(PlacedObject, hitPose.position, hitPose.rotation);
                 }
             }
         }

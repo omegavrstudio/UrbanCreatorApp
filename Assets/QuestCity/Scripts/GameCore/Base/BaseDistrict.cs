@@ -24,6 +24,9 @@ public class BaseDistrict : MonoBehaviour, ISelectable
 			BuildingCount = DistrictSettings.DefaultBuildingCount;
 			PeopleCount = DistrictSettings.DefaultPeopleCount;
 		}
+
+        InitDestrict();
+
 	}
 
 	private void ActivateHighlight()
@@ -39,15 +42,42 @@ public class BaseDistrict : MonoBehaviour, ISelectable
         service.ÑolorizeDestrict(this);
     }
 
-    public void CreateDistrict()
+    private void InitDestrict() 
     {
-        DisctrictExist = true;
-    }
+        if (DisctrictExist)
+        { 
+            DistrictMesh.SetActive(true);
+			DistrictMesh.transform.localScale = new Vector3(0.5394183f, 0.5394183f, 0.5394183f);
+        }
+        else 
+        {
+		    DistrictMesh.SetActive(false);
+			DistrictMesh.transform.localScale = new Vector3(0.5394183f, 0, 0.5394183f);
+        }
+
+	}
+
+	public void CreateDistrict()
+    {
+		DistrictMesh.SetActive(true);
+		LeanTween.scaleY(DistrictMesh, 0.5394183f, 2).setOnComplete(() => {
+            LeanTween.scaleZ(OutlineMesh, 1, 2);
+		});
+
+		DisctrictExist = true;
+	}
 
     public void DestroyDistrict()
     {
-        DisctrictExist = false;
-    }
+		
+		LeanTween.scaleY(DistrictMesh, 0, 2).setOnComplete(() => {
+			IDistrictsService service = ServiceLocator.Current.Get<IDistrictsService>();
+			service.ÑolorizeDestrict(this);
+			DistrictMesh.SetActive(false);
+		});
+
+		DisctrictExist = false;
+	}
 
     public void IncreaseProfitDistrict()
     {
