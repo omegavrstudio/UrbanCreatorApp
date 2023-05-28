@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DistrictName: "\u041F\u0440\u043E\u043C\u044B\u0448\u043B\u0435\u043D\u043D\u044B\u0439"
   DistrictType: 2
-  MaxBuildingCount: 5
-  DefaultBuildingCount: 0
-  DefaultPeopleCount: 1000
-  CostToCreate: 0
+  MaxBuildingCount: 500
+  DefaultBuildingCount: 20
+  DefaultPeopleCount: 100
+  CostToCreate: 5000
   CostToDestroy: 0

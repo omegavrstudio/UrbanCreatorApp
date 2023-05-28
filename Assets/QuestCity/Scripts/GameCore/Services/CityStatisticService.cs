@@ -36,8 +36,17 @@ namespace QuestCity.GameCore.Services
         {
             cityStatistic.AddCoin(coinCount);
         }
+		public virtual void SubCoin(float coinCount) 
+        {
+			cityStatistic.SubCoin(coinCount);
+		}
+		public virtual float GetCoin() 
+        {
+			return cityStatistic.GetCoin();
+		}
 
-        public virtual void AddPeople(float pepole)
+
+		public virtual void AddPeople(float pepole)
         {
             cityStatistic.AddPeople(pepole);
         }

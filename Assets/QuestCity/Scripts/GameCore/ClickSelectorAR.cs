@@ -2,12 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using QuestCity.GameCore.Interfaces;
+using UnityEngine.Events;
 
 public class ClickSelectorAR : MonoBehaviour
 {
     public Camera arcamera;
 
     public ISelectable currentSelectedObject;
+
+    public UnityEvent OnSelectedObject = new UnityEvent();
+    public UnityEvent OnDeselectObject = new UnityEvent();
 
     private void OnEnable()
     {
@@ -27,6 +31,7 @@ public class ClickSelectorAR : MonoBehaviour
             {
                 currentSelectedObject.Deselct();
                 currentSelectedObject = null;
+				OnDeselectObject.Invoke();
             }
 
 
@@ -38,7 +43,8 @@ public class ClickSelectorAR : MonoBehaviour
                 ISelectable selectObject = raycastHit.transform.GetComponent<ISelectable>();
                 if (selectObject != null)
                 {
-                    currentSelectedObject = selectObject;
+                    OnSelectedObject.Invoke();
+					currentSelectedObject = selectObject;
                     selectObject.Select();
                 }
             }

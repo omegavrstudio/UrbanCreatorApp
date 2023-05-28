@@ -54,8 +54,16 @@ namespace QuestCity.GameCore
             statistic.CoinsCount += coinCount;
             UpdateStatistics();
         }
-
-        public virtual void AddPeople(float peopleCount)
+		public virtual float GetCoin()
+		{
+			return statistic.CoinsCount;
+		}
+		public virtual void SubCoin(float coinCount)
+		{
+			statistic.CoinsCount -= coinCount;
+			UpdateStatistics();
+		}
+		public virtual void AddPeople(float peopleCount)
         {
             statistic.PeoplesCount += peopleCount;
             UpdateStatistics();

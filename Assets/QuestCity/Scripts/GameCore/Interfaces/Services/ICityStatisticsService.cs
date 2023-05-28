@@ -10,6 +10,8 @@ namespace QuestCity.GameCore.Services
     {
         public virtual CityStatisticStruct GetStatistic() { return default; }
         public virtual void AddCoin(float coinCount) { }
+        public virtual void SubCoin(float coinCount) { }
+        public virtual float GetCoin() { return 0.0f; }
         public virtual void AddPeople(float pepole) { }
         public virtual void AddBuildings(float buildingCount) { }
         public virtual void AddRegions(float regionCount) { }
