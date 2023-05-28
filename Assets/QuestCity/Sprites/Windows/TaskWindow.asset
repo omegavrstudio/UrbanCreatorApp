@@ -12,15 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35648741dd5b14baa82bec08abfe7457, type: 3}
   m_Name: TaskWindow
   m_EditorClassIdentifier: 
-  _lastTimeModified: 638206399369189934
+  _lastTimeModified: 638208774458840782
   _documentAsset: {fileID: 856698499714479222}
-  _sharedMesh: {fileID: 4150025614197501366}
+  _sharedMesh: {fileID: 7684591139000615334}
   _antialiasing: 1
   _generateCollider: 0
   _keepSVGFile: 1
   _ignoreSVGCanvas: 1
   _colliderShape: []
-  _format: 1
+  _format: 2
   _useGradients: 0
   _meshCompression: 0
   _optimizeMesh: 1
@@ -148,7 +148,7 @@ MonoBehaviour:
 '
   _title: 
   _description: 
---- !u!43 &4150025614197501366
+--- !u!43 &7684591139000615334
 Mesh:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}

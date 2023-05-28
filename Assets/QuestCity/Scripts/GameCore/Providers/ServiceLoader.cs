@@ -13,6 +13,7 @@ public class ServiceLoader : MonoBehaviour
     [SerializeField] private CityResourcesService _cityResourcesService;
     [SerializeField] private AchievementService _achievementService;
     [SerializeField] private ChallengeService _challengeService;
+    [SerializeField] private DistrictsService _districtsService;
 
 
     private void Awake()
@@ -30,5 +31,6 @@ public class ServiceLoader : MonoBehaviour
         ServiceLocator.Current.Register<ICityResourcesService>(_cityResourcesService).Initialize();
         ServiceLocator.Current.Register<IAchievementService>(_achievementService).Initialize();
         ServiceLocator.Current.Register<IChallangeService>(_challengeService).Initialize();
+        ServiceLocator.Current.Register<IDistrictsService>(_districtsService).Initialize();
     }
 }

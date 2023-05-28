@@ -20,6 +20,7 @@ namespace QuestCity.GameCore.Models
 
     public enum DisctritsType
     {
+        None,
         Life,
         Commercial,
         Industrial

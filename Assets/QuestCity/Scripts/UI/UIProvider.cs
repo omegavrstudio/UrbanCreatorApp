@@ -28,7 +28,6 @@ namespace QuestCity.UI {
             _happySlider.value = cityStatisticProvider.CityStatistics.HappyIndex;
             _lvlSlider.value = cityStatisticProvider.CityStatistics.CityLevel;
         }
-
         private void OnDisable()
         {
             EventHolder<CityStatisticProvider>.RemoveListener(OnStatisticChanged);
